@@ -10,7 +10,7 @@ User have to provide some inputs:
 ### Outputs
 Output will be saved in extern file
 Result  consist of
-* Sum of salaries --variable part of installment
+* Sum of salaries 
 * A list of names and employees' pay
 
 ### Functions
