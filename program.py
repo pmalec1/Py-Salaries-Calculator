@@ -69,3 +69,27 @@ def calculate_salary(database, type_of_contract, number_of_employee):
 def calculate_sum_of_salaries(list_of_salaries):
     sum_of_salaries = sum(list_of_salaries)
     return sum_of_salaries
+
+
+def write_data_to_output_file(database, output_file_path, list_of_salaries, sum_of_salaries):
+    file = open(output_file_path, "w", encoding='utf8')
+    output_data = []
+    output_data.append("SUM OF SALARIES = {}" .format(sum_of_salaries))
+    amount_of_workers = len(database)
+    for number_of_worker in range(amount_of_workers-1):
+        output_data.append([database[number_of_worker][0], list_of_salaries[number_of_worker]])
+    for number_of_worker in range(amount_of_workers-1):
+        file.writelines(str(output_data[number_of_worker]))
+        file.writelines("\n")
+    file.close()
+
+
+def get_input_file_path_from_user():
+    input_file_path = input(str("Please provide input file path:"))
+    return input_file_path
+
+
+def get_destination_file_path_from_user():
+    destination_file_path = input(str("Please provide destitation file path:"))
+    return destination_file_path
+
