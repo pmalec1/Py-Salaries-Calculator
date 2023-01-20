@@ -54,7 +54,7 @@ def switch_mode_of_salary_calculating(database, type_of_contract, number_of_empl
 def make_list_of_salaries(database):
     amount_of_employees = len(database)
     list_of_salaries = []
-    for number_of_employee in range(amount_of_employees-1):
+    for number_of_employee in range(amount_of_employees):
         type_of_contract = database[number_of_employee][1]
         salary = switch_mode_of_salary_calculating(database, type_of_contract, number_of_employee) #Mode of calculating depends on type of contract
         list_of_salaries.append(salary)         #Appends salary of each employee at the end of the list of salaries
@@ -72,9 +72,9 @@ def write_data_to_output_file(database, output_file_path, list_of_salaries, sum_
     output_data.append("Salary for employees\n")
     output_data.append("SUM OF SALARIES = {}\n" .format(sum_of_salaries))
     amount_of_workers = len(database)
-    for number_of_worker in range(amount_of_workers-1):
+    for number_of_worker in range(amount_of_workers):
         output_data.append([database[number_of_worker][0], list_of_salaries[number_of_worker]])
-    for number_of_worker in range(amount_of_workers-1):
+    for number_of_worker in range(amount_of_workers):
         file.writelines(str(output_data[number_of_worker]))
         file.writelines("\n")
     file.close()
