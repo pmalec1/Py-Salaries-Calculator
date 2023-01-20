@@ -78,6 +78,7 @@ def write_data_to_output_file(database, output_file_path, list_of_salaries, sum_
         file.writelines(str(output_data[number_of_worker]))
         file.writelines("\n")
     file.close()
+    return output_data
 
 
 def get_input_file_path_from_user():
@@ -100,7 +101,8 @@ def main():
         sys.exit("Input file not found. Path must point to an existing file")
     list_of_salaries = make_list_of_salaries(database)
     sum_of_salaries = calculate_sum_of_salaries(list_of_salaries)
-    write_data_to_output_file(database, output_file_path, list_of_salaries, sum_of_salaries)
+    output_data = write_data_to_output_file(database, output_file_path, list_of_salaries, sum_of_salaries)
+    print(output_data)
 
 
 if __name__ == '__main__':
