@@ -1,7 +1,7 @@
 try:
     import sys
-except:
-    raise Exception("Library sys not found. This package is necessary for this program\n"
+except ImportError:
+    print("Library sys not found. This package is necessary for this program\n"
                     " consider reinstallation of python eviroment")
 
 
