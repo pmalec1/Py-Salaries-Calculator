@@ -1,6 +1,11 @@
-Piotr Malec;UoP;2000;20;10;
-Jan Kolno;UoD;2000;DONE;
-Pietrek Kogucik;UoD;2000;NOT_DONE;
-Agata Nowak;UZ;30;140;
-Antoni Kosiba;UZ;55;40;
-Anzelm Bohatyrowicz;UoP;3300;25;5;
+Stanislaw Wokulski;UoP;2000;20;10;
+Rodion Raskolnikow;UoD;2000;DONE;
+Stephen Prate;UoD;5000;NOT_DONE;
+Georgia Weidman;UZ;50;140;
+Jerzy Szabatin;UZ;15;20;
+Jerzy Osiowski;UoP;3300;25;35;
+Wojciech Glocki;UoD;5000;DONE;
+Marek Galewski;UoD;6000;NOT_DONE;
+Miroslaw Kardas;UZ;30;140;
+Dennis Ritchie;UZ;55;40;
+Brian Kernighan;UoP;3300;25;5;
