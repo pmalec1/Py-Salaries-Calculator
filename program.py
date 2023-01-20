@@ -93,3 +93,19 @@ def get_destination_file_path_from_user():
     destination_file_path = input(str("Please provide destitation file path:"))
     return destination_file_path
 
+
+def main():
+    input_file_path = get_input_file_path_from_user()
+    output_file_path = get_destination_file_path_from_user()
+    database = []
+    try:
+        database = get_data_from_file_to_database(input_file_path)
+    except:
+        sys.exit("Input file not found. Path must point to an existing file")
+    list_of_salaries = make_list_of_salaries(database)
+    sum_of_salaries = calculate_sum_of_salaries(list_of_salaries)
+    write_data_to_output_file(database, output_file_path, list_of_salaries, sum_of_salaries)
+
+
+if __name__ == '__main__':
+    main()
