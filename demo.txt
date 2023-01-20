@@ -1,0 +1,6 @@
+Piotr Malec;UoP;2000;20;10;
+Jan Kolno;UoD;2000;DONE;
+Pietrek Kogucik;UoD;2000;NOT_DONE;
+Agata Nowak;UZ;30;140;
+Antoni Kosiba;UZ;55;40;
+Anzelm Bohatyrowicz;UoP;3300;25;5;
